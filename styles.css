@@ -113,6 +113,7 @@ form {
     grid-template-columns: 50px 50px 144px;
     align-items: center;
     padding-left: 56px;
+    justify-self: center;
 }
 
 .user-greeting-container {
@@ -137,6 +138,7 @@ form > input {
 
 .btn-header {
     padding: 20px;
+    justify-self: center;
 }
 
 ul {
@@ -235,10 +237,10 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 25px;
     /* grid-area: 1 / 1 / 2 / 3; */
-    width: 800px;
-    height: 615px;
+    /* width: 800px; */
+    /* height: 615px; */
     padding: 0px 20px;
 }
 
@@ -280,9 +282,6 @@ button:hover {
 }
 
 .updates-container {
-    grid-area: 1 / 2 / 2 / 3;
-    display: grid;
-    grid-template-rows: 450px;
     padding-top: 15px;
 }
 
@@ -309,8 +308,20 @@ button:hover {
 .announcements {
     background-color: var(--color-wht);
     box-shadow: 0px 5px 5px 1px var(--text-grey);
-    padding: 25px;
+    border-radius: 5px;
+    padding: 15px;
     width: 250px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.trending-container {
+    padding-top: 15px;
 }
 
 .users-container {
@@ -318,7 +329,8 @@ button:hover {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     box-shadow: 0px 5px 5px 1px var(--text-grey);
-    padding: 25px;
+    border-radius: 5px;
+    padding: 15px;
     width: 250px;
     gap: 15px;
 }
